@@ -93,7 +93,7 @@ endif
 set ruler
 
 " Height of the command bar
-set cmdheight=2
+set cmdheight=1
 
 " A buffer becomes hidden when it is abandoned
 set hid
@@ -430,3 +430,29 @@ endfunction
 " if has("autocmd")
 "   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"   from use vim as ide
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 关闭兼容模式
+ set nocompatible
+" " 禁止光标闪烁
+ set gcr=a:block-blinkon0
+" " 开启行号显示
+ set number
+" " 高亮显示当前行/列
+ set cursorline
+ set cursorcolumn
+ " 随 vim 自启动
+ let g:indent_guides_enable_on_vim_startup=1
+ " " 从第二层开始可视化显示缩进
+ let g:indent_guides_start_level=2
+ " " 色块宽度
+ let g:indent_guides_guide_size=1
+
+" 基于缩进或语法进行代码折叠
+"set foldmethod=indent
+set foldmethod=syntax
+" 启动 vim 时关闭折叠代码
+set nofoldenable
+
