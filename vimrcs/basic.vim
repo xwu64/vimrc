@@ -439,13 +439,8 @@ endfunction
 " " 禁止光标闪烁
  set gcr=a:block-blinkon0
 " " 开启行号显示
-<<<<<<< HEAD
 set number
 set relativenumber
-=======
- set number
- set relativenumber
->>>>>>> 8e75f5575cff8fbf496bc653e8f7b80c56d35cd7
 " " 高亮显示当前行/列
  set cursorline
  set cursorcolumn
