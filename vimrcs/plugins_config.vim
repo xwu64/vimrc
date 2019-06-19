@@ -89,6 +89,9 @@ let NERDTreeAutoCenter=1
 let NERDTreeShowHidden=1
 " 显示书签列表
 let NERDTreeShowBookmarks=1
+" close nerdtree after open file
+let NERDTreeQuitOnOpen=1
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
