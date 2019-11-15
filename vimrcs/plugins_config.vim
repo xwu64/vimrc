@@ -164,7 +164,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Python
-let g:syntastic_python_checkers=['python']
+let g:syntastic_python_checkers=['flake8']
 
 " Javascript
 let g:syntastic_javascript_checkers = ['jshint']
